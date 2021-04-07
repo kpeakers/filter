@@ -33,33 +33,23 @@ function draw() {
     
   var position = ctracker.getCurrentPosition();
     
+      image(vidcapture, 0, 0);
+        //actual feed DONT TOUCH NUMBERS KAYLEE  image(vidcapture, 0, 0);
+        //actual feed
+    
     if (position){
         
-        
-      
-        noStroke();
-        fill(r, 255, b);
-        
-//        position.forEach(function(pos){
-//            
-//        })
-        // use this to apply something to ALL coordinates on chart
-        
-        ellipse(position[62][0],position[62][1],50);
-        
-        print("x: " + position[62][0])
-        print("y: " + position[62][0])
-        //console logs
+        ctracker.draw(drawcanvas);
+        //this draws initial face outline
+
 //        
-        var r = map(position[62][0], 250, 150, 0, 255, true);
-        var b = map(position[62][1], 300, 200, 0, 255, true);
-//        
-          background(r, 255, b);
-    
-          tint(255, 126);
+////        position.forEach(function(pos){
+////            
+////        })
+//        // use this to apply something to ALL coordinates on chart
+   
         
-          image(vidcapture, 0, 0);
-        //actual feed
 
     }
 }
+
