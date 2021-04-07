@@ -1,0 +1,15 @@
+*{
+	box-sizing: border-box;
+}
+
+body, html {
+	min-height: 100vh;
+	margin: 0;
+
+	font-family: 'Righteous', cursive;
+
+}
+
+img {
+	max-width: 100%;
+}
