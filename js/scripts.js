@@ -30,7 +30,8 @@ function setup() {
     drawcanvas = document.getElementById('defaultCanvas0');
     //defaultcanvas0 is the default name for p5
     
-   
+    image(css, 0, 0);
+    console.log('css');
 }
 
 function draw() {
@@ -52,8 +53,6 @@ function draw() {
         ctracker.draw(drawcanvas);
         //this draws initial face outline
 
-         image(css, 0, 0);
-    console.log('css');
 //        
 ////        position.forEach(function(pos){
 ////            
