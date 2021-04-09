@@ -1,15 +1,21 @@
-*{
-	box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-body, html {
-	min-height: 100vh;
-	margin: 0;
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
 
-	font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive;
 
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
+}
+
+#p5canvas {
+    padding-top: 20vh;
+    padding-left: 20vw;
 }
