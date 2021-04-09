@@ -2,6 +2,14 @@ console.log ("running");
 
 var vidcapture, ctracker, drawcanvas;
 
+let css;
+
+function preload() {
+    
+    css = loadImage('imgs/css.png');
+}
+
+
 function setup() {
 
     var cnv = createCanvas(windowWidth, windowHeight /2);
@@ -21,6 +29,8 @@ function setup() {
     //just for testing
     drawcanvas = document.getElementById('defaultCanvas0');
     //defaultcanvas0 is the default name for p5
+    
+   
 }
 
 function draw() {
@@ -42,6 +52,8 @@ function draw() {
         ctracker.draw(drawcanvas);
         //this draws initial face outline
 
+         image(css, 0, 0);
+    console.log('css');
 //        
 ////        position.forEach(function(pos){
 ////            
