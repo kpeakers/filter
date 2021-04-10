@@ -7,6 +7,12 @@ var css;
 function preload() {
 
     css = loadImage('imgs/css.png');
+    html = loadImage('imgs/html.png');
+    js = loadImage('imgs/js.png');
+    wifi = loadImage('imgs/wifi.png');
+    tear = loadImage('imgs/teardrop.png');
+    star = loadImage('imgs/star.png');
+
 }
 
 
@@ -41,17 +47,32 @@ function draw() {
     var position = ctracker.getCurrentPosition();
 
     print(position);
-
     if (position) {
 
+        //        ctracker.draw(drawcanvas);
+
+
         //        scale(-1, 1);
-        image(css, position[62][0], position[62][1], 50, 50);
+        
+        tint(255, 126);
+
+        image(css, position[23][0], position[23][1], 40, 40);
+
+        image(html, position[30][0], position[30][1], 50, 40);
+
+        image(js, position[54][0], position[54][1], 20, 20);
+
+        image(wifi, position[33][0], position[33][1], 20, 20);
+
+        image(tear, position[28][0], position[28][1], 10, 10);
+
+        image(star, position[20][0], position[20][1], 60, 60);
 
         //        fill(0);
         //        ellipse(position[62][0], position[62][1], 10);
         //        console.log('dot');
 
-        //                ctracker.draw(drawcanvas);
+        //                        ctracker.draw(drawcanvas);
         //this draws initial face outline
 
     }
