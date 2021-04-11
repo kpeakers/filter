@@ -36,7 +36,8 @@ function setup() {
     //    drawcanvas = document.getElementById('defaultCanvas0');
     //defaultcanvas0 is the default name for p5
 
-
+    // noLoop();
+    //for testing and screenshots
 }
 
 function draw() {
@@ -54,26 +55,36 @@ function draw() {
 
         //        scale(-1, 1);
         
-        tint(255, 126);
+        tint(255, 100);
+        //making tattoos translucent
 
-        image(css, position[23][0], position[23][1], 40, 40);
+        //ACTUAL TATTOOS
 
-        image(html, position[30][0], position[30][1], 50, 40);
+        image(css, position[23][0], position[23][1]+10, 40, 40);
 
-        image(js, position[54][0], position[54][1], 20, 20);
+        image(html, position[30][0], position[30][1]+10, 50, 40);
 
-        image(wifi, position[33][0], position[33][1], 20, 20);
+        image(js, position[7][0], position[7][1]-80, 20, 20);
 
-        image(tear, position[28][0], position[28][1], 10, 10);
+        image(wifi, position[33][0]-20, position[33][1]-80, 30, 30);
 
-        image(star, position[20][0], position[20][1], 60, 60);
+        image(tear, position[12][0]-40, position[12][1], 10, 10);
 
-        //        fill(0);
-        //        ellipse(position[62][0], position[62][1], 10);
-        //        console.log('dot');
+        image(star, position[20][0], position[20][1]-40, 30, 30);
+
 
         //                        ctracker.draw(drawcanvas);
         //this draws initial face outline
 
     }
 }
+
+// function mousePressed() {
+//     loop();
+//   }
+  
+//   function mouseReleased() {
+//     noLoop();
+//   }
+
+// FOR TESTING AND SCREENSHOTS

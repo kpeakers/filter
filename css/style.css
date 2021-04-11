@@ -15,7 +15,25 @@ img {
     max-width: 100%;
 }
 
-#p5canvas {
+body {
+
+    background-image: url('../imgs/bg.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+div {
+
     padding-top: 20vh;
-    padding-left: 20vw;
+
+}
+
+p {
+    color: white;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: red;
 }
